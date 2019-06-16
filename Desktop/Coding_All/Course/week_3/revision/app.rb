@@ -9,5 +9,7 @@ get '/secret' do
 end
 
 get '/cat' do
+@name = ["Amigo", "Oscar", "Viking"].sample
+@last_name = %w(Purr Miau Fffuuurr).sample
 erb(:index)
 end
